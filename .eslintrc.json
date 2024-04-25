@@ -11,16 +11,9 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": [
-      "tsconfig.json"
-    ]
+    "project": ["tsconfig.json"]
   },
-  "plugins": [
-    "@typescript-eslint",
-    "prettier",
-    "unicorn",
-    "import"
-  ],
+  "plugins": ["@typescript-eslint", "prettier", "unicorn", "import"],
   "rules": {
     "@typescript-eslint/no-unused-vars": [
       "error",
@@ -35,13 +28,11 @@
     "import/prefer-default-export": "off",
     "import/extensions": "off",
     "no-underscore-dangle": "off",
-    "no-restricted-syntax": [
-      "off",
-      "ForOfStatement"
-    ],
+    "no-restricted-syntax": ["off", "ForOfStatement"],
     "prettier/prettier": [
       "error",
       {
+        "endOfLine": "auto",
         "trailingComma": "all"
       }
     ],

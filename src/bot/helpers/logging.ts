@@ -9,6 +9,7 @@ export function getUpdateInfo(ctx: Context): Omit<Update, "update_id"> {
   return update;
 }
 
+// return a grammy middleware
 export function logHandle(id: string): Middleware<Context> {
   return (ctx, next) => {
     ctx.logger.info({
