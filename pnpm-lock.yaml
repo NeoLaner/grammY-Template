@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@grammyjs/auto-chat-action':
         specifier: 0.1.1
-        version: 0.1.1(grammy@1.21.2)
+        version: 0.1.1(grammy@1.25.2)
       '@grammyjs/hydrate':
         specifier: 1.4.1
-        version: 1.4.1(grammy@1.21.2)
+        version: 1.4.1(grammy@1.25.2)
       '@grammyjs/i18n':
         specifier: 1.0.2
-        version: 1.0.2(grammy@1.21.2)
+        version: 1.0.2(grammy@1.25.2)
       '@grammyjs/parse-mode':
         specifier: 1.9.0
-        version: 1.9.0(grammy@1.21.2)
+        version: 1.9.0(grammy@1.25.2)
       '@grammyjs/types':
         specifier: 3.5.2
         version: 3.5.2
@@ -33,11 +33,11 @@ importers:
         specifier: 4.26.2
         version: 4.26.2
       grammy:
-        specifier: 1.21.2
-        version: 1.21.2
+        specifier: 1.25.2
+        version: 1.25.2
       grammy-guard:
         specifier: 0.5.0
-        version: 0.5.0(grammy@1.21.2)
+        version: 0.5.0(grammy@1.25.2)
       iso-639-1:
         specifier: 3.1.2
         version: 3.1.2
@@ -335,9 +335,13 @@ packages:
   '@grammyjs/types@3.5.2':
     resolution: {integrity: sha512-KZlJcOdgD8N6SMIHWfwmb11L5/L2+rptWBxCexbzNCry/wfLXFFGFniyUrySnvFo+cWMxgy5GuImwY3mhUrP8g==}
 
+  '@grammyjs/types@3.9.0':
+    resolution: {integrity: sha512-QzZAbz5COBZnDlDs6x94TIIIH5Pi7AMk0rJPM2O5JAz5Q+s7Xxp3lGg/pWyiVR9Q8euRDYCJmDtcRjwwFD6a3g==}
+
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -345,6 +349,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    deprecated: Use @eslint/object-schema instead
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1052,6 +1057,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globals@13.24.0:
     resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
@@ -1076,8 +1082,8 @@ packages:
     peerDependencies:
       grammy: ^1.10.0
 
-  grammy@1.21.2:
-    resolution: {integrity: sha512-PbXJNiTv1Faxu5jZJbIbmdS8lzNax8yeOtnSMcxXmnfGP/6cRidoJ/4fNjfTx3JtPqH6mvtjdAx4eh8AhFIhbA==}
+  grammy@1.25.2:
+    resolution: {integrity: sha512-i1NCr2B8d5/hEHbIzqwG/1+JmIY63xVcBPCyciJB88BYKlXKsM42v5dfRVGf7AYyPxL07Em0qk42Z6YJIqR3HQ==}
     engines: {node: ^12.20.0 || >=14.13.1}
 
   graphemer@1.4.0:
@@ -1149,6 +1155,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -1674,6 +1681,7 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   run-parallel@1.2.0:
@@ -2131,27 +2139,29 @@ snapshots:
 
   '@fluent/langneg@0.6.2': {}
 
-  '@grammyjs/auto-chat-action@0.1.1(grammy@1.21.2)':
+  '@grammyjs/auto-chat-action@0.1.1(grammy@1.25.2)':
     dependencies:
-      grammy: 1.21.2
+      grammy: 1.25.2
 
-  '@grammyjs/hydrate@1.4.1(grammy@1.21.2)':
+  '@grammyjs/hydrate@1.4.1(grammy@1.25.2)':
     dependencies:
       abort-controller: 3.0.0
-      grammy: 1.21.2
+      grammy: 1.25.2
 
-  '@grammyjs/i18n@1.0.2(grammy@1.21.2)':
+  '@grammyjs/i18n@1.0.2(grammy@1.25.2)':
     dependencies:
       '@deno/shim-deno': 0.18.2
       '@fluent/bundle': 0.17.1
       '@fluent/langneg': 0.6.2
-      grammy: 1.21.2
+      grammy: 1.25.2
 
-  '@grammyjs/parse-mode@1.9.0(grammy@1.21.2)':
+  '@grammyjs/parse-mode@1.9.0(grammy@1.25.2)':
     dependencies:
-      grammy: 1.21.2
+      grammy: 1.25.2
 
   '@grammyjs/types@3.5.2': {}
+
+  '@grammyjs/types@3.9.0': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
@@ -3100,14 +3110,14 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  grammy-guard@0.5.0(grammy@1.21.2):
+  grammy-guard@0.5.0(grammy@1.25.2):
     dependencies:
       callback-data: 1.1.1
-      grammy: 1.21.2
+      grammy: 1.25.2
 
-  grammy@1.21.2:
+  grammy@1.25.2:
     dependencies:
-      '@grammyjs/types': 3.5.2
+      '@grammyjs/types': 3.9.0
       abort-controller: 3.0.0
       debug: 4.3.4
       node-fetch: 2.7.0
